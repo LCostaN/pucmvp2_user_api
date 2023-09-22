@@ -1,2 +1,2 @@
-from schemas.list import *
+from schemas.user import *
 from schemas.error import *
