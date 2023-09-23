@@ -24,4 +24,4 @@ class User(Base):
         self.password = password
 
     def __str__(self):
-        return '{ id: ' + (self.id or 'null') + ', name: ' + self.username + ' }'
+        return '{ id: ' + (self.id or 'null') + ', username: ' + self.username + ' }'

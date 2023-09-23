@@ -6,6 +6,9 @@ class UserSchema(BaseModel):
     username: str = Field(title="Usuário", description="Usuário")
     password: str = Field(title="Senha", description="Senha do usuário")
 
+    def __str__(self):
+        return '{ username: ' + (self.username or 'null') + ', password: ' + self.password + ' }'
+
 class SuccessSchema(BaseModel):
     """ Define o retorno de autenticação ou registro bem sucedido
     """
