@@ -20,7 +20,7 @@ user_tag = Tag(name="Usuário", description="Autenticação e criação de usuá
 
 @app.get('/', tags=[home_tag])
 def home():
-    """Redireciona para /openapi, tela que permite a escolha do estilo de documentação.
+    """Redireciona para /openapi/swagger, tela de documentação do Swagger
     """
     return redirect('/openapi/swagger')
 
